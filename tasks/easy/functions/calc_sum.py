@@ -4,3 +4,7 @@
 
 для расчета суммы можно воспользоваться функцией sum
 """
+
+
+def calc_sum(*args) -> int:
+    return sum(args)
