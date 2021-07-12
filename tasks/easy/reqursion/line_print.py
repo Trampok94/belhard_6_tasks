@@ -22,10 +22,10 @@ line_print(some_list)
 """
 
 
-def line_print(some_list: list, tab = 0):
+def line_print(some_list: list, tab=0):
     for i in some_list:
         if isinstance(i, list):
-            line_print(i, tab+1)
+            line_print(i, tab + 1)
         else:
             print("    " * tab + str(i))
     tab = 0

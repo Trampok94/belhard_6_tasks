@@ -26,7 +26,7 @@ n = 6:
 """
 
 
-def triangular_sequence(n, i = 1):
+def triangular_sequence(n, i=1):
     if i == n:
         print(str(n) * n)
     else:

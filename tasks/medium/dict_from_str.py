@@ -14,7 +14,7 @@
 STR_VAL = 'python is the fastest-growing major programming language'
 
 
-def dict_from_str(in_str: str) -> dict :
+def dict_from_str(in_str: str) -> dict:
     from collections import Counter
     res = Counter(STR_VAL)
     return dict(res)
