@@ -7,3 +7,13 @@
 """
 LIST_1 = [str(i) for i in range(20)]
 LIST_2 = [i for i in range(20)]
+
+
+def get_dict_from_lists(l_1: list, l_2: list) -> dict:
+    res_dict = {}
+    for i in range(len(l_1)):
+        res_dict[l_1[i]] = l_2[i]
+    return res_dict
+
+
+print(get_dict_from_lists(LIST_1, LIST_2))

@@ -12,3 +12,12 @@
 }
 """
 STR_VAL = 'python is the fastest-growing major programming language'
+
+
+def dict_from_str(in_str: str) -> dict :
+    from collections import Counter
+    res = Counter(STR_VAL)
+    return dict(res)
+
+
+print(dict_from_str(STR_VAL))

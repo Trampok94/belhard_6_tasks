@@ -38,3 +38,63 @@
     - курица
     - булка
 """
+
+
+def bread(func):
+    def inner():
+        print("</------------\\>")
+        func()
+        print("<\\____________/>")
+
+    return inner
+
+
+def tomato(func):
+    def inner():
+        print("*** помидоры ****")
+        func()
+
+    return inner
+
+
+def salad(func):
+    def inner():
+        print("~~~~ салат ~~~~~")
+        func()
+
+    return inner
+
+
+def cheese(func):
+    def inner():
+        print("^^^^^ сыр ^^^^^^")
+        func()
+
+    return inner
+
+
+def onion(func):
+    def inner():
+        print("----- лук ------")
+        func()
+
+    return inner
+
+
+@bread
+@onion
+@tomato
+def beef():
+    print("### говядина ###")
+
+
+@bread
+@cheese
+@salad
+def chicken():
+    print("|||| курица ||||")
+
+
+chicken()
+print()
+beef()
